@@ -7,12 +7,10 @@ import io.netty.buffer.Unpooled;
 public class ByteBufCompositeBufferDemo {
 
 	public static void main(String[] args) {
-
 		// 创建一个堆缓冲区
 		ByteBuf heapBuf = Unpooled.buffer(3);
 		String way = "way";
 		heapBuf.writeBytes(way.getBytes());
-
 		// 创建一个直接缓冲区
 		ByteBuf directBuf = Unpooled.directBuffer(3);
 		String lau = "lau";

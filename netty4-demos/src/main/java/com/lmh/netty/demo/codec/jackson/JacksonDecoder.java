@@ -1,4 +1,4 @@
-package com.lmh.netty.demo.codec.jackcon;
+package com.lmh.netty.demo.codec.jackson;
 
 import java.io.InputStream;
 import java.util.List;

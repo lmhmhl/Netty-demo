@@ -12,9 +12,7 @@ public class EchoServer {
 	public static int DEFAULT_PORT = 7;
 
 	public static void main(String[] args) throws Exception {
-
 		int port;
-
 		try {
 			port = Integer.parseInt(args[0]);
 		} catch (RuntimeException ex) {

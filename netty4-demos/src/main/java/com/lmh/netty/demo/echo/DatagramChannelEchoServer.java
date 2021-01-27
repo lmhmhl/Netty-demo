@@ -14,7 +14,6 @@ public class DatagramChannelEchoServer {
 	public static void main(String[] args) throws Exception {
 
 		int port;
-
 		try {
 			port = Integer.parseInt(args[0]);
 		} catch (RuntimeException ex) {

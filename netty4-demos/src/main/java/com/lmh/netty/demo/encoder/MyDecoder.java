@@ -31,7 +31,7 @@ public class MyDecoder extends LengthFieldBasedFrameDecoder {
 	@Override
 	protected Msg decode(ChannelHandlerContext ctx, ByteBuf in2) throws Exception {
 		ByteBuf in = (ByteBuf) super.decode(ctx, in2);
-		if (in == null) {
+		if (null == in) {
 			return null;
 		}
 

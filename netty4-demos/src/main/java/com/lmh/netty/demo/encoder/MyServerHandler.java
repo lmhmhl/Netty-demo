@@ -15,7 +15,6 @@ public class MyServerHandler extends SimpleChannelInboundHandler<Object> {
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, Object obj) throws Exception {
 		Channel incoming = ctx.channel();
-
 		if (obj instanceof Msg) {
 			Msg msg = (Msg) obj;
 			System.out.println("Client->Server:" + incoming.remoteAddress() + msg.getBody());

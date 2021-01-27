@@ -8,10 +8,9 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 	@Override
 	public void channelRead(ChannelHandlerContext ctx, Object msg) {
 		System.out.println(ctx.channel().remoteAddress() + " -> Server :" + msg);
-		// 写消息到管道
-		ctx.write(msg);// 写消息
-		ctx.flush(); // 冲刷消息
-		// 上面两个方法等同于 ctx.writeAndFlush(msg);
+		ctx.write(msg);// 写消息到管道，队列
+		ctx.flush(); // 冲刷消息到socket
+		//ctx.writeAndFlush(msg);
 	}
 	
 	@Override

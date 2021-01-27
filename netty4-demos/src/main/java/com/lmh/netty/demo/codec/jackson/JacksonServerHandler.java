@@ -1,4 +1,4 @@
-package com.lmh.netty.demo.codec.jackcon;
+package com.lmh.netty.demo.codec.jackson;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

@@ -36,7 +36,7 @@ public final class DatagramChannelEchoClient {
 			.channel(NioDatagramChannel.class)
 			.option(ChannelOption.SO_BROADCAST, true)
 			.handler(new DatagramChannelEchoClientHandler());
-			// 绑定端口
+			// 绑定端口,不会调用connect
 			ChannelFuture f = b.bind(port).sync();
 			System.out.println("DatagramChannelEchoClient已启动，端口：" + port);
 			Channel channel = f.channel();
